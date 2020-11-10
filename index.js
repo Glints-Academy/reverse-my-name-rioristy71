@@ -1,7 +1,11 @@
 function reverseMyName(str) {
-    // put your code here
-
-    return str
+        var newString = "";
+        for (var i = str.length - 1; i >= 0; i--) {
+            newString += str[i];
+        }
+        return newString;
+    }
+    reverseString('Michael Jackson');
 }
 
 const Test = (fun, result) => console.log(reverseMyName(fun) === result)
